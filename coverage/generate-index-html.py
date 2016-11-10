@@ -43,6 +43,7 @@ with open('out/index.html', 'w') as out:
           width: 100px;
         }
         .table-row:nth-child(even) { background-color: #eee; }
+        .sha { font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; }
     </style>
   </head>
   <body>
@@ -73,7 +74,7 @@ with open('out/index.html', 'w') as out:
     out.write('''
             <div class="table-row">
               <div>{0}</div>
-              <div><a href="https://github.com/nodejs/node/commit/{1}">{1}</a></div>
+              <div class="sha"><a href="https://github.com/nodejs/node/commit/{1}">{1}</a></div>
               <div><a href="coverage-{1}/index.html">{2:05.2f}&nbsp;%</a></div>
               <div><a href="coverage-{1}/cxxcoverage.html">{3:05.2f}&nbsp;%</a></div>
             </div>'''.format(date, sha, float(jscov), float(cxxcov)))
