@@ -62,7 +62,11 @@ with open('out/index.html', 'w') as out:
         <div class="page-content">
           <div class="table">
             <div class="table-header">
+<<<<<<< HEAD
               <div>Date</div>
+=======
+              <div>Date (UTC)</div>
+>>>>>>> nodejs/master
               <div>HEAD</div>
               <div>JS Coverage</div>
               <div>C++ Coverage</div>
